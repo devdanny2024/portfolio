@@ -11,8 +11,7 @@
     gap: 50px;
 }
 .header-title{
-    width: 695px;
-    height: 178px;
+    width: 1080px;
     flex-shrink: 0;
 }
 .header-title h1{
