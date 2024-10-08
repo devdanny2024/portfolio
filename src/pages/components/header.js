@@ -19,7 +19,6 @@ function Header() {
                         height={400} // Specify height
                     />
                 </div>
-                
             </div>
         </div>
     </>
