@@ -41,7 +41,7 @@ function Services() {
                 <div className='service-card'>
                     <Image
                     className= 'service-icon'
-                        src="/images/icons/server.png" // Path relative to the 'public' folder
+                        src="/server.png" // Path relative to the 'public' folder
                         alt="Olukayode"
                         width={47} // Specify width
                         height={47} // Specify height
@@ -53,7 +53,7 @@ function Services() {
                 <div className='service-card'>
                     <Image
                     className= 'service-icon'
-                        src="/images/icons/web.png" // Path relative to the 'public' folder
+                        src="/web.png" // Path relative to the 'public' folder
                         alt="Olukayode"
                         width={47} // Specify width
                         height={47} // Specify height
@@ -66,7 +66,7 @@ function Services() {
                 <div className='service-card'>
                     <Image
                     className= 'service-icon'
-                        src="/images/icons/link.png" // Path relative to the 'public' folder
+                        src="/link.png" // Path relative to the 'public' folder
                         alt="Olukayode"
                         width={47} // Specify width
                         height={47} // Specify height
@@ -78,7 +78,7 @@ function Services() {
                 <div className='service-card'>
                     <Image
                     className= 'service-icon'
-                        src="/images/icons/api.png" // Path relative to the 'public' folder
+                        src="/api.png" // Path relative to the 'public' folder
                         alt="Olukayode"
                         width={47} // Specify width
                         height={47} // Specify height
