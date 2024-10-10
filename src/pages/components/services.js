@@ -1,5 +1,4 @@
 import Image from 'next/image';
-
 function Services() {
     return(
     <>
@@ -13,7 +12,7 @@ function Services() {
                 <div className='service-card'>
                     <Image
                     className= 'service-icon'
-                        src="/images/icons/apple.png" // Path relative to the 'public' folder
+                        src="/apple.png" // Path relative to the 'public' folder
                         alt="Olukayode"
                         width={47} // Specify width
                         height={47} // Specify height
@@ -29,7 +28,7 @@ function Services() {
                 <div className='service-card'>
                     <Image
                     className= 'service-icon'
-                        src="/images/icons/github.png" // Path relative to the 'public' folder
+                        src="/github.png" // Path relative to the 'public' folder
                         alt="Olukayode"
                         width={47} // Specify width
                         height={47} // Specify height
