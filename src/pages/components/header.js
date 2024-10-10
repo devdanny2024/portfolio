@@ -13,7 +13,7 @@ function Header() {
                 </div>
                 <div className='header-img'>
                     <Image
-                        src="/images/memage.png" // Path relative to the 'public' folder
+                        src="/memage.png" // Path relative to the 'public' folder
                         alt="Olukayode"
                         width={400} // Specify width
                         height={400} // Specify height
@@ -21,7 +21,7 @@ function Header() {
                 </div>
                 <div className='header-img2'>
                     <Image
-                        src="/images/memages.png" // Path relative to the 'public' folder
+                        src="/memages.png" // Path relative to the 'public' folder
                         alt="Olukayode"
                         width={600} // Specify width
                         height={800} // Specify height
