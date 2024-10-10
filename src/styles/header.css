@@ -1,7 +1,6 @@
 .headers{
     background: radial-gradient(124.33% 115.33% at 119.93% -20.77%, rgba(184, 0, 31, 0.52) 0%, #384B70 100%);
     width: 100%;
-    height: 1052px;
     flex-shrink: 0;
 }
 .header-cont{
@@ -9,6 +8,7 @@
     padding-top: 330px;
     padding-left: 120px;
     gap: 50px;
+    padding-bottom: 200px;
 }
 .header-title{
     width: 1080px;
@@ -55,6 +55,96 @@
     justify-content: center;
     align-items: center;
 }
-.header-img{
-    
+.header-img1{
+    display: flex;
+}
+.header-img2{
+    display: none;
+}
+.header-img3{
+    display: none;
+}
+
+@media (max-width: 1440px) {
+    .header-title{
+        width: 695px;
+        flex-shrink: 0;
+    }
+    .header-img1{
+        display: flex;
+    }
+    .header-img2{
+        display: none;
+    }
+    .header-img3{
+        display: none;
+    }
+}
+@media (max-width: 1024px) {
+    .header-cont{
+        flex-direction: column;
+        gap: 0;
+    }
+    .header-title{
+        width: 695px;
+        flex-shrink: 0;
+    }
+    .header-title h1{
+        font-size: 24px;
+    }
+    .header-title h2{
+        font-size: 46px;
+    }
+    .header-img{
+        display: none;
+    }
+    .header-img2{
+        display: flex;
+        justify-content: flex-end; /* Aligns children to the right */
+    }
+    .header-img3{
+        display: none;
+    }
+}
+@media (max-width: 440px) {
+    .header-cont{
+        flex-direction: column;
+        gap: 0;
+        padding-left: 40px;
+        padding-top: 230px;
+        padding-bottom: 0px;
+
+    }
+    .header-title{
+        width: 295px;
+        flex-shrink: 0;
+    }
+    .header-title h1{
+        font-size: 14px;
+    }
+    .header-title h2{
+        margin-top: 10px;
+        font-size: 24px;
+        line-height: 25px;
+        margin-bottom: 10px;
+    }
+    .header-title p{
+        font-size: 10px;
+    }
+    .header-img{
+        display: none;
+    }
+    .header-img2{
+        display: none;
+    }
+    .header-img3{
+        display: flex;
+        justify-content: flex-end; /* Aligns children to the right */
+    }
+    .header-btn{
+        margin-top: 10px;
+        width: 120px;
+        height: 35px;
+        font-size: 10px;
+    }
 }

@@ -19,6 +19,22 @@ function Header() {
                         height={400} // Specify height
                     />
                 </div>
+                <div className='header-img2'>
+                    <Image
+                        src="/images/memages.png" // Path relative to the 'public' folder
+                        alt="Olukayode"
+                        width={600} // Specify width
+                        height={800} // Specify height
+                    />
+                </div>
+                <div className='header-img3'>
+                    <Image
+                        src="/images/memages.png" // Path relative to the 'public' folder
+                        alt="Olukayode"
+                        width={250} // Specify width
+                        height={320} // Specify height
+                    />
+                </div>
             </div>
         </div>
     </>

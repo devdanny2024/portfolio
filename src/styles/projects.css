@@ -1,0 +1,25 @@
+.project-cont{
+    width: 100%;
+    height: 1000px;
+    background: #FCFAEE;
+}
+.project-title{
+    padding-left: 120px;
+    padding-top: 60px;
+}
+.project-title h1{
+    color: #B8001F;
+    font-family: "Roboto Mono";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.project-title h2{
+    color: #B8001F;
+    font-family: "Paytone One";
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
