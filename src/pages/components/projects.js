@@ -37,10 +37,8 @@ function Projects() {
                     <div className = 'project1-img'></div>
                     <div className='project-desc'>
                         <h1>Website Development</h1>
-                        <h2>SUSI.AI</h2>
-                        <p>The main feature of the app is to provide a conversational 
-                            interface to provide intelligent answers using 
-                            the loklak/AskSusi infrastructure.
+                        <h2>NFT Wagon</h2>
+                        <p>NFTWAGON is a decentralized platform where users can easily trade, buy, and sell NFTs. Built on Next.js for the frontend and Solidity
                         </p>
                         <h3><b>Platform:</b> Swift, SwiftUI.</h3>
                         <a className='project-btn' href='https://github.com/Blvckcodeio/nftwagons' target='_blank' rel='noopener noreferrer'>View Project</a>
