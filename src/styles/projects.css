@@ -1,7 +1,7 @@
 .project-cont{
     width: 100%;
-    height: 1000px;
     background: #FCFAEE;
+    padding-bottom: 80px;
 }
 .project-title{
     padding-left: 120px;
@@ -10,7 +10,7 @@
 .project-title h1{
     color: #B8001F;
     font-family: "Roboto Mono";
-    font-size: 24px;
+    font-size: 24px;    
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -22,4 +22,166 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+}
+.proj-case{
+    padding-left: 120px;
+    display: flex;
+    flex-direction: column;
+    padding-right: 120px;
+    margin-top: 120px;
+    gap: 20px;
+}
+.project-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;    /* Centers vertically */
+    height: 100%;
+    gap: 30px;
+
+}
+.project1-img{
+    width: 350px;
+    height: 350px;
+    background-image: url('/laptop.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+}
+.project2-img{
+    width: 350px;
+    height: 350px;
+    background-image: url('/mobile.png'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+}
+.project-desc{
+    width: 350px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centers horizontally */
+}
+.project-desc h1{
+    color: #B8001F;
+    font-family: "Roboto Mono";
+    font-size: 14px;    
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.project-desc h2{
+    color: #B8001F;
+    font-family: "Paytone One";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.project-desc p{
+    color: #B8001F;
+    font-family: "Roboto Mono";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.project-desc h3{
+    margin-top: 10px;
+    color: #B8001F;
+    font-family: "Roboto Mono";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 40px;
+}
+.project-btn{
+    width: 120px;
+    height: 40px;
+    background-color: #B8001F;
+    font-family: "Paytone One";
+    font-size: 14px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center; /* Centers horizontally */
+    align-items: center;
+    cursor: pointer;
+}
+@media (max-width: 440px) {
+
+    .project-title{
+        padding-left: 40px;
+        padding-top: 80px;
+    }
+    .project-title h1{
+        font-size: 16px;
+    }
+    .project-title h2{
+        font-size: 24px;
+
+    }
+    .proj-case{
+        gap: 100px;
+    }
+    .project-row{
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Centers horizontally */
+        align-items: center;    /* Centers vertically */
+        height: 100%;
+        gap: 50px;
+    
+    }
+    .project1-img{
+        width: 250px;
+        height: 250px;
+        background-image: url('/laptop.jpg'); /* Replace with your image path */
+        background-size: cover;
+        background-position: center;
+    }
+    .project2-img{
+        width: 250px;
+        height: 250px;
+        background-image: url('/mobile.png'); /* Replace with your image path */
+        background-size: cover;
+        background-position: center;
+    }
+    .project-desc{
+        width: 250px;
+        height: 450px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; /* Centers horizontally */
+    }
+    .project-desc h1{
+        color: #B8001F;
+        font-family: "Roboto Mono";
+        font-size: 14px;    
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .project-desc h2{
+        color: #B8001F;
+        font-family: "Paytone One";
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .project-desc p{
+        color: #B8001F;
+        font-family: "Roboto Mono";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .project-desc h3{
+
+    }
+    .project-btn{
+        width: 120px;
+        height: 80px;
+    }
 }
