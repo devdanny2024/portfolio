@@ -1,9 +1,10 @@
 .services-cont{
     width: 100%;
-    height: 1204px;
+    height: 100%;
     display: flex;
     padding-left: 120px;
     padding-top: 80px;
+    padding-bottom: 60px;
     background: #222;
     display: flex;
     flex-direction: column;

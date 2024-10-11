@@ -84,6 +84,8 @@
     .header-cont{
         flex-direction: column;
         gap: 0;
+        padding-bottom: 0px;
+
     }
     .header-title{
         width: 695px;

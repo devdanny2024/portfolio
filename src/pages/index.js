@@ -18,6 +18,7 @@ export default function Home() {
       <Services></Services>
       <Projects></Projects>
       <Certification></Certification>
+      <Footer></Footer>
     </>
   );
 }

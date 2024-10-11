@@ -1,0 +1,51 @@
+.footer-cont {
+    background-color: #222; /* Background color */
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Title and socials are on the left and right */
+    align-items: center;
+    flex-wrap: wrap; /* Allows wrapping for responsiveness */
+}
+
+.footer-title h1 {
+    color: #B8001F; /* Title color */
+    font-size: 24px;
+    font-family: "Paytone One", sans-serif; /* Title font */
+    margin: 0;
+}
+
+.footer-socials {
+    display: flex;
+    gap: 30px; /* Increased space between icons */
+}
+
+.fservice-icon {
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.fservice-icon:hover {
+    transform: scale(1.1); /* Icon animation on hover */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .footer-cont {
+        align-items: flex-start; /* Align both title and socials to the left */
+    }
+
+    .footer-title {
+        margin-bottom: 20px;
+    }
+
+    .footer-socials {
+        justify-content: flex-start; /* Social icons remain in a row */
+        gap: 20px; /* Adjust gap for smaller screens */
+    }
+
+    .fservice-icon {
+        width: 32px; /* Reduce icon size */
+        height: 32px; /* Reduce icon size */
+    }
+}
