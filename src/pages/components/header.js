@@ -9,7 +9,6 @@ function Header() {
                     <h1>Hello,</h1>
                     <h2>I’m A Full-Stack Block Chain Developer</h2>
                     <p>I am Olukayode Soliu, a full stack developer, great at a lot of other things too.</p>
-                    <div className='header-btn'>Send me a Mail</div>
                 </div>
                 <div className='header-img'>
                     <Image
