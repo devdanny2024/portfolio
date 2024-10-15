@@ -29,7 +29,7 @@ function Projects() {
                         <p>The main feature of the website is to offer a streamlined platform for trading NFTs, providing users with secure transactions, wallet integration, and intuitive collection browsing.
                         </p>
                         <h3><b>Platform:</b> Solidity. Next.js, Web3.js.</h3>
-                        <a className='project-btn' href='https://github.com/devdanny2024/Hashiroo' target='_blank' rel='noopener noreferrer'>View Project</a>
+                        <a className='project-btn' href='https://github.com/devdanny2024/Hash' target='_blank' rel='noopener noreferrer'>View Project</a>
                     </div>
                     <div className = 'project2-img'></div>
                 </div>

@@ -50,7 +50,7 @@
 .project2-img{
     width: 350px;
     height: 350px;
-    background-image: url('/mobile.png'); /* Replace with your image path */
+    background-image: url('/home.png'); /* Replace with your image path */
     background-size: cover;
     background-position: center;
 }
