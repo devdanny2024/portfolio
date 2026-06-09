@@ -34,19 +34,19 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
 
   return (
     <motion.article
-      initial={{ opacity: 0, y: 32 }}
       whileHover={{
-        y: -4,
-        boxShadow: `0 0 0 1px ${project.color}40, 0 20px 60px ${project.color}20`,
+        y: -6,
+        boxShadow: `0 0 0 1px ${project.color}40, 0 24px 70px ${project.color}20`,
       }}
-      transition={{ duration: 0.3, ease: "easeOut" }}
+      transition={{ duration: 0.25, ease: "easeOut" }}
       style={{
         background: "#111111",
         border: "1px solid #2a2a2a",
-        borderRadius: "12px",
+        borderRadius: "14px",
         overflow: "hidden",
         display: "flex",
         flexDirection: "column",
+        height: "100%",
       }}
       aria-label={`Project: ${project.title}`}
     >
@@ -62,10 +62,10 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
       {/* Card body */}
       <div
         style={{
-          padding: "24px",
+          padding: "28px 28px 24px",
           display: "flex",
           flexDirection: "column",
-          gap: "16px",
+          gap: "18px",
           flex: 1,
         }}
       >

@@ -161,7 +161,7 @@ export default function Skills() {
     <section
       id="skills"
       ref={sectionRef}
-      className="relative py-28 px-6 md:px-12 lg:px-20 overflow-hidden"
+      className="relative py-36 px-6 md:px-16 lg:px-24 overflow-hidden"
       style={{ background: "#0a0a0a" }}
     >
       {/* Subtle grid background */}

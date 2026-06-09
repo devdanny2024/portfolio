@@ -16,8 +16,8 @@ interface Stat {
 
 const STATS: Stat[] = [
   { value: 22, suffix: "+", label: "Projects Shipped" },
-  { value: 4, suffix: "+", label: "Years Experience" },
-  { value: 3, suffix: "", label: "Production Platforms Live" },
+  { value: 10, suffix: "+", label: "Years Experience" },
+  { value: 10, suffix: "+", label: "Platforms Live" },
   { value: null, suffix: "", label: "Coffee Consumed", symbol: "∞" },
 ];
 
@@ -49,7 +49,7 @@ function StatCounter({ stat, index }: { stat: Stat; index: number }) {
   }, [isInView, stat.value, index]);
 
   return (
-    <div ref={cardRef} className="relative flex flex-col items-center gap-3 px-8 py-6">
+    <div ref={cardRef} className="relative flex flex-col items-center gap-4 px-10 py-10">
       {/* Big number */}
       <motion.div
         initial={{ opacity: 0, y: 30 }}

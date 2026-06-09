@@ -120,7 +120,7 @@ export default function About() {
     <section
       id="about"
       ref={sectionRef}
-      className="relative w-full py-24 md:py-36 overflow-hidden"
+      className="relative w-full py-32 md:py-44 overflow-hidden"
       style={{ background: "#0a0a0a" }}
     >
       {/* Background noise texture */}
@@ -135,9 +135,9 @@ export default function About() {
       />
 
       <div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-12">
-        <div className="grid grid-cols-1 gap-16 lg:grid-cols-2 lg:gap-24 items-center">
+        <div className="grid grid-cols-1 gap-20 lg:grid-cols-2 lg:gap-32 items-center">
           {/* ── LEFT COLUMN ── */}
-          <div className="flex flex-col gap-8">
+          <div className="flex flex-col gap-10">
             {/* Label */}
             <div ref={labelRef} className="flex items-center gap-4">
               <span

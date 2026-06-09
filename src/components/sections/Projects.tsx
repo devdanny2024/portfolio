@@ -447,29 +447,27 @@ export default function Projects() {
     const cards = gridRef.current.querySelectorAll<HTMLElement>(".grid-card");
     if (cards.length === 0) return;
 
+    // Set invisible before animating
+    gsap.set(cards, { opacity: 0, y: 40 });
+
     const ctx = gsap.context(() => {
-      // Kill existing triggers on this container to avoid stacking
       ScrollTrigger.getAll()
         .filter((t: ScrollTrigger) => t.vars?.id === "projects-grid")
         .forEach((t: ScrollTrigger) => t.kill());
 
-      gsap.fromTo(
-        cards,
-        { opacity: 0, y: 40 },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 0.55,
-          ease: "power3.out",
-          stagger: 0.07,
-          scrollTrigger: {
-            id: "projects-grid",
-            trigger: gridRef.current,
-            start: "top 85%",
-            toggleActions: "play none none reverse",
-          },
-        }
-      );
+      gsap.to(cards, {
+        opacity: 1,
+        y: 0,
+        duration: 0.6,
+        ease: "power3.out",
+        stagger: 0.06,
+        scrollTrigger: {
+          id: "projects-grid",
+          trigger: gridRef.current,
+          start: "top 88%",
+          toggleActions: "play none none none",
+        },
+      });
     });
 
     return () => ctx.revert();
@@ -612,7 +610,7 @@ export default function Projects() {
             />
           </div>
 
-          <div className="flex flex-col gap-6">
+          <div className="flex flex-col gap-10">
             {featuredProjects.map((project, i) => (
               <FeaturedCard key={project.id} project={project} index={i} />
             ))}
@@ -649,12 +647,12 @@ export default function Projects() {
             style={{
               display: "grid",
               gridTemplateColumns:
-                "repeat(auto-fill, minmax(min(100%, 340px), 1fr))",
-              gap: "20px",
+                "repeat(auto-fill, minmax(min(100%, 360px), 1fr))",
+              gap: "28px",
             }}
           >
             {filteredProjects.map((project, i) => (
-              <div key={project.id} className="grid-card" style={{ opacity: 0 }}>
+              <div key={project.id} className="grid-card">
                 <ProjectCard project={project} index={i} />
               </div>
             ))}
