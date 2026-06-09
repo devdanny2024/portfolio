@@ -15,7 +15,7 @@ interface Stat {
 }
 
 const STATS: Stat[] = [
-  { value: 22, suffix: "+", label: "Projects Shipped" },
+  { value: 40, suffix: "+", label: "Projects Shipped" },
   { value: 10, suffix: "+", label: "Years Experience" },
   { value: 10, suffix: "+", label: "Platforms Live" },
   { value: null, suffix: "", label: "Coffee Consumed", symbol: "∞" },
@@ -154,7 +154,7 @@ export default function Stats() {
         }}
       />
 
-      <div style={{ position: "relative", zIndex: 10, maxWidth: "1280px", margin: "0 auto", padding: "80px 48px" }}>
+      <div style={{ position: "relative", zIndex: 10, maxWidth: "1280px", margin: "0 auto", padding: "clamp(48px,8vw,80px) clamp(20px,5vw,48px)" }}>
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-0">
           {STATS.map((stat, i) => (
             <div key={stat.label} className="relative flex">

@@ -78,7 +78,7 @@ export default function Footer() {
       }}
     >
       {/* Top row */}
-      <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "40px 48px 24px", display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: "24px" }}>
+      <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "40px clamp(20px,5vw,48px) 24px", display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: "24px" }}>
         {/* Logo */}
         <a
           href="#"
@@ -138,7 +138,7 @@ export default function Footer() {
       </div>
 
       {/* Gradient divider */}
-      <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "0 48px" }} aria-hidden="true">
+      <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "0 clamp(20px,5vw,48px)" }} aria-hidden="true">
         <div style={{ height: "1px", width: "100%", background: "linear-gradient(90deg, #7c3aed 0%, #06b6d4 50%, transparent 100%)" }} />
       </div>
 

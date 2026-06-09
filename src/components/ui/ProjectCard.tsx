@@ -209,18 +209,6 @@ export default function ProjectCard({ project, index }: ProjectCardProps) {
             marginTop: "4px",
           }}
         >
-          {/* Year */}
-          <span
-            className="font-mono"
-            style={{
-              fontSize: "12px",
-              color: "rgba(255,255,255,0.3)",
-              letterSpacing: "0.08em",
-            }}
-          >
-            {project.year}
-          </span>
-
           {/* Status badge + links */}
           <div style={{ display: "flex", alignItems: "center", gap: "10px" }}>
             <span

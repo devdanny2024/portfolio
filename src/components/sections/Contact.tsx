@@ -142,7 +142,7 @@ export default function Contact() {
       id="contact"
       ref={sectionRef}
       className="relative overflow-hidden"
-      style={{ minHeight: "100vh", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", padding: "80px 48px", background: "#0a0a0a" }}
+      style={{ minHeight: "100vh", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", padding: "clamp(48px,8vw,80px) clamp(20px,5vw,48px)", background: "#0a0a0a" }}
     >
       {/* Glowing gradient orb behind text */}
       <div
@@ -181,8 +181,7 @@ export default function Contact() {
       <div style={{ position: "relative", zIndex: 10, textAlign: "center", maxWidth: "1280px", margin: "0 auto", width: "100%" }}>
         {/* Section label */}
         <p
-          className="font-mono text-xs tracking-[0.3em] uppercase mb-8"
-          style={{ color: "#7c3aed" }}
+          style={{ fontFamily: "monospace", fontSize: "11px", letterSpacing: "0.3em", textTransform: "uppercase", color: "#7c3aed", marginBottom: "32px" }}
         >
           // get in touch
         </p>
@@ -218,17 +217,15 @@ export default function Contact() {
         {/* Subtext */}
         <p
           ref={subtextRef}
-          className="font-mono text-sm md:text-base max-w-xl mx-auto mb-12"
-          style={{ color: "#888888", lineHeight: 1.7 }}
+          style={{ fontFamily: "monospace", fontSize: "14px", color: "#888888", lineHeight: 1.7, maxWidth: "480px", margin: "0 auto 48px", textAlign: "center" }}
         >
-          Open to full-time roles, freelance contracts, and interesting
-          collaborations.
+          Open to full-time roles, freelance contracts, and interesting collaborations.
         </p>
 
         {/* Contact buttons */}
         <div
           ref={buttonsRef}
-          className="flex flex-wrap items-center justify-center gap-4 mb-16"
+          style={{ display: "flex", flexWrap: "wrap", alignItems: "center", justifyContent: "center", gap: "16px", marginBottom: "64px" }}
         >
           <MagneticButton
             href="mailto:soliupeter@gmail.com"

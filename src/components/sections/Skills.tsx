@@ -177,33 +177,30 @@ export default function Skills() {
         }}
       />
 
-      <div style={{ position: "relative", zIndex: 10, maxWidth: "1280px", margin: "0 auto", padding: "0 48px" }}>
+      <div style={{ position: "relative", zIndex: 10, maxWidth: "1280px", margin: "0 auto", padding: "0 clamp(20px, 5vw, 48px)" }}>
         {/* Section heading */}
-        <div className="mb-16">
+        <div style={{ marginBottom: "64px" }}>
           <p
-            className="font-mono text-xs tracking-[0.3em] uppercase mb-4"
-            style={{ color: "#7c3aed" }}
+            style={{ fontFamily: "monospace", fontSize: "11px", letterSpacing: "0.3em", textTransform: "uppercase", color: "#7c3aed", marginBottom: "16px" }}
           >
             // 03
           </p>
           <h2
             ref={headingRef}
-            className="font-display text-6xl md:text-8xl tracking-wider mb-4"
-            style={{ color: "#f5f5f5", lineHeight: 1 }}
+            style={{ color: "#f5f5f5", lineHeight: 1, fontSize: "clamp(3rem,8vw,6rem)", letterSpacing: "0.05em", marginBottom: "16px" }}
           >
             TECH STACK
           </h2>
           <p
             ref={subheadingRef}
-            className="font-mono text-sm md:text-base"
-            style={{ color: "#888888" }}
+            style={{ fontFamily: "monospace", fontSize: "14px", color: "#888888" }}
           >
             Tools I use to build at scale
           </p>
         </div>
 
         {/* Skill groups */}
-        <div className="space-y-12">
+        <div style={{ display: "flex", flexDirection: "column", gap: "48px" }}>
           {skillGroups.map((group, groupIndex) => {
             if (!chipRefs.current[groupIndex]) {
               chipRefs.current[groupIndex] = [];
@@ -216,24 +213,19 @@ export default function Skills() {
                 }}
               >
                 {/* Group label */}
-                <div className="group-label flex items-center gap-3 mb-5">
+                <div className="group-label" style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "20px" }}>
                   <span
-                    className="font-mono text-xs tracking-[0.25em] uppercase font-semibold"
-                    style={{ color: "#7c3aed" }}
+                    style={{ fontFamily: "monospace", fontSize: "11px", letterSpacing: "0.25em", textTransform: "uppercase", fontWeight: 600, color: "#7c3aed", whiteSpace: "nowrap" }}
                   >
                     {group.label}
                   </span>
                   <div
-                    className="flex-1 h-px"
-                    style={{
-                      background:
-                        "linear-gradient(to right, #2a2a2a, transparent)",
-                    }}
+                    style={{ flex: 1, height: "1px", background: "linear-gradient(to right, #2a2a2a, transparent)" }}
                   />
                 </div>
 
                 {/* Skill chips */}
-                <div className="flex flex-wrap gap-3">
+                <div style={{ display: "flex", flexWrap: "wrap", gap: "12px" }}>
                   {group.skills.map((skill, skillIndex) => (
                     <motion.span
                       key={skill}
@@ -246,8 +238,13 @@ export default function Skills() {
                         color: "#e5e5e5",
                       }}
                       transition={{ duration: 0.18 }}
-                      className="px-4 py-2 rounded-full font-mono text-xs md:text-sm cursor-default select-none"
                       style={{
+                        padding: "8px 16px",
+                        borderRadius: "9999px",
+                        fontFamily: "monospace",
+                        fontSize: "12px",
+                        cursor: "default",
+                        userSelect: "none",
                         background: "#111111",
                         border: "1px solid #2a2a2a",
                         color: "#aaaaaa",
@@ -273,32 +270,27 @@ export default function Skills() {
 
         {/* Divider */}
         <div
-          className="my-14 h-px"
           style={{
-            background:
-              "linear-gradient(to right, transparent, #2a2a2a, transparent)",
+            margin: "56px 0",
+            height: "1px",
+            background: "linear-gradient(to right, transparent, #2a2a2a, transparent)",
           }}
         />
 
         {/* Currently exploring */}
         <div>
-          <div className="flex items-center gap-3 mb-5">
+          <div style={{ display: "flex", alignItems: "center", gap: "12px", marginBottom: "20px" }}>
             <span
-              className="font-mono text-xs tracking-[0.25em] uppercase font-semibold"
-              style={{ color: "#06b6d4" }}
+              style={{ fontFamily: "monospace", fontSize: "11px", letterSpacing: "0.25em", textTransform: "uppercase", fontWeight: 600, color: "#06b6d4", whiteSpace: "nowrap" }}
             >
               Currently Learning / Exploring
             </span>
             <div
-              className="flex-1 h-px"
-              style={{
-                background:
-                  "linear-gradient(to right, #2a2a2a, transparent)",
-              }}
+              style={{ flex: 1, height: "1px", background: "linear-gradient(to right, #2a2a2a, transparent)" }}
             />
           </div>
 
-          <div className="flex flex-wrap gap-3">
+          <div style={{ display: "flex", flexWrap: "wrap", gap: "12px" }}>
             {exploringSkills.map((skill) => (
               <motion.span
                 key={skill}
@@ -308,8 +300,13 @@ export default function Skills() {
                   color: "#cccccc",
                 }}
                 transition={{ duration: 0.18 }}
-                className="px-4 py-2 rounded-full font-mono text-xs md:text-sm cursor-default select-none"
                 style={{
+                  padding: "8px 16px",
+                  borderRadius: "9999px",
+                  fontFamily: "monospace",
+                  fontSize: "12px",
+                  cursor: "default",
+                  userSelect: "none",
                   background: "rgba(6,182,212,0.04)",
                   border: "1px dashed #2a2a2a",
                   color: "#666666",

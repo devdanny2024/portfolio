@@ -114,33 +114,48 @@ export default function Hero() {
       <div className="absolute top-1/4 right-1/4 w-64 h-64 rounded-full bg-accent-cyan/10 blur-[80px] pointer-events-none" />
       <div className="absolute bottom-1/4 left-1/4 w-80 h-80 rounded-full bg-accent-violet/10 blur-[100px] pointer-events-none" />
 
-      {/* Floating tag */}
+      {/* Floating tag — left */}
       <motion.div
         initial={{ opacity: 0, x: -30 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ delay: 3.5, duration: 0.6 }}
-        className="absolute top-1/4 left-6 md:left-12 hidden md:flex items-center gap-2"
+        style={{
+          position: "absolute",
+          top: "25%",
+          left: "48px",
+          display: "flex",
+          alignItems: "center",
+          gap: "10px",
+        }}
       >
-        <div className="w-8 h-px bg-accent-violet" />
-        <span className="font-mono text-xs text-white/30 tracking-widest uppercase">
+        <div style={{ width: "32px", height: "1px", background: "#7c3aed" }} />
+        <span style={{ fontFamily: "monospace", fontSize: "11px", color: "rgba(255,255,255,0.35)", letterSpacing: "0.25em", textTransform: "uppercase" }}>
           Based in Nigeria
         </span>
       </motion.div>
 
+      {/* Floating tag — right */}
       <motion.div
         initial={{ opacity: 0, x: 30 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ delay: 3.6, duration: 0.6 }}
-        className="absolute top-1/4 right-6 md:right-12 hidden md:flex items-center gap-2"
+        style={{
+          position: "absolute",
+          top: "25%",
+          right: "48px",
+          display: "flex",
+          alignItems: "center",
+          gap: "10px",
+        }}
       >
-        <span className="font-mono text-xs text-white/30 tracking-widest uppercase">
-          Available for hire
+        <span style={{ fontFamily: "monospace", fontSize: "11px", color: "rgba(255,255,255,0.35)", letterSpacing: "0.25em", textTransform: "uppercase" }}>
+          Available for Projects
         </span>
-        <span className="w-2 h-2 rounded-full bg-green-400 animate-pulse" />
+        <span style={{ width: "8px", height: "8px", borderRadius: "50%", background: "#22c55e", display: "inline-block", animation: "pulse 2s cubic-bezier(0.4,0,0.6,1) infinite" }} />
       </motion.div>
 
       {/* Main content */}
-      <div style={{ position: "relative", zIndex: 10, textAlign: "center", padding: "0 48px", width: "100%", maxWidth: "1280px", margin: "0 auto" }}>
+      <div style={{ position: "relative", zIndex: 10, textAlign: "center", padding: "0 clamp(20px, 5vw, 48px)", width: "100%", maxWidth: "1280px", margin: "0 auto" }}>
         {/* Alias label */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}

@@ -495,7 +495,7 @@ export default function Projects() {
         style={{ background: "rgba(6,182,212,0.05)" }}
       />
 
-      <div style={{ position: "relative", zIndex: 10, maxWidth: "1280px", margin: "0 auto", padding: "120px 48px 160px" }}>
+      <div style={{ position: "relative", zIndex: 10, maxWidth: "1280px", margin: "0 auto", padding: "clamp(60px,10vw,120px) clamp(20px,5vw,48px) clamp(80px,12vw,160px)" }}>
 
         {/* ── HEADER ─────────────────────────────────────────────────────── */}
         <div ref={labelRef} className="flex items-center gap-4 mb-6">
