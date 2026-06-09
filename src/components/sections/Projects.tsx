@@ -389,6 +389,7 @@ export default function Projects() {
   const gridRef = useRef<HTMLDivElement>(null);
 
   const [activeCategory, setActiveCategory] = useState<FilterCategory>("All");
+  const isFirstMount = useRef(true);
 
   const filteredProjects =
     activeCategory === "All"
@@ -447,30 +448,28 @@ export default function Projects() {
     const cards = gridRef.current.querySelectorAll<HTMLElement>(".grid-card");
     if (cards.length === 0) return;
 
-    // Set invisible before animating
     gsap.set(cards, { opacity: 0, y: 40 });
 
-    const ctx = gsap.context(() => {
-      ScrollTrigger.getAll()
-        .filter((t: ScrollTrigger) => t.vars?.id === "projects-grid")
-        .forEach((t: ScrollTrigger) => t.kill());
-
-      gsap.to(cards, {
-        opacity: 1,
-        y: 0,
-        duration: 0.6,
-        ease: "power3.out",
-        stagger: 0.06,
-        scrollTrigger: {
-          id: "projects-grid",
-          trigger: gridRef.current,
-          start: "top 88%",
-          toggleActions: "play none none none",
+    if (isFirstMount.current) {
+      isFirstMount.current = false;
+      // First load: use ScrollTrigger so cards animate when section scrolls into view
+      ScrollTrigger.create({
+        id: "projects-grid",
+        trigger: gridRef.current,
+        start: "top 88%",
+        once: true,
+        onEnter: () => {
+          gsap.to(cards, {
+            opacity: 1, y: 0, duration: 0.6, ease: "power3.out", stagger: 0.06,
+          });
         },
       });
-    });
-
-    return () => ctx.revert();
+    } else {
+      // Category change: user is already looking at the section, animate immediately
+      gsap.to(cards, {
+        opacity: 1, y: 0, duration: 0.4, ease: "power3.out", stagger: 0.05, delay: 0.05,
+      });
+    }
   }, [activeCategory]);
 
   return (

@@ -259,7 +259,7 @@ export default function Contact() {
             GitHub
           </MagneticButton>
 
-          <MagneticButton href="#" variant="ghost">
+          <MagneticButton href="https://www.linkedin.com/in/olukayode-soliu" variant="ghost" target="_blank" rel="noopener noreferrer">
             <svg
               width="16"
               height="16"

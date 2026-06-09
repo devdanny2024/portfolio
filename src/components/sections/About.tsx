@@ -243,8 +243,7 @@ export default function About() {
             <div>
               <a
                 ref={btnRef}
-                href="/cv.pdf"
-                download
+                href="mailto:soliupeter@gmail.com?subject=CV Request — Olukayode Soliu&body=Hi Danny, I would like to request your CV."
                 className="group relative inline-flex items-center gap-3 rounded-lg px-7 py-3.5 text-sm font-mono font-medium transition-all duration-300"
                 style={{ color: "#e4e4e7" }}
               >

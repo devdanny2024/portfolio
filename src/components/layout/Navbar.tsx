@@ -70,12 +70,14 @@ export default function Navbar() {
 
           {/* CTA */}
           <div className="hidden md:block">
-            <MagneticButton
-              href="mailto:soliupeter@gmail.com"
-              className="px-5 py-2.5 rounded-full border border-white/10 text-sm font-medium text-white hover:border-accent-violet/50 hover:bg-accent-violet/10 transition-all duration-300"
+            <button
+              onClick={() => {
+                document.querySelector("#contact")?.scrollIntoView({ behavior: "smooth" });
+              }}
+              className="px-5 py-2.5 rounded-full border border-white/10 text-sm font-medium text-white hover:border-accent-violet/50 hover:bg-accent-violet/10 transition-all duration-300 cursor-none"
             >
               Hire Me
-            </MagneticButton>
+            </button>
           </div>
 
           {/* Mobile hamburger */}
