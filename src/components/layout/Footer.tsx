@@ -78,7 +78,7 @@ export default function Footer() {
       }}
     >
       {/* Top row */}
-      <div className="mx-auto max-w-7xl px-6 pt-10 pb-6 flex flex-col gap-6 sm:flex-row sm:items-center sm:justify-between">
+      <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "40px 48px 24px", display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: "24px" }}>
         {/* Logo */}
         <a
           href="#"
@@ -138,37 +138,22 @@ export default function Footer() {
       </div>
 
       {/* Gradient divider */}
-      <div
-        className="mx-auto max-w-7xl px-6"
-        aria-hidden="true"
-      >
-        <div
-          className="h-px w-full"
-          style={{
-            background:
-              "linear-gradient(90deg, #7c3aed 0%, #06b6d4 50%, transparent 100%)",
-          }}
-        />
+      <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "0 48px" }} aria-hidden="true">
+        <div style={{ height: "1px", width: "100%", background: "linear-gradient(90deg, #7c3aed 0%, #06b6d4 50%, transparent 100%)" }} />
       </div>
 
       {/* Bottom row */}
-      <div className="mx-auto max-w-7xl px-6 pt-5 pb-8 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
-        <p className="text-sm text-white/40 text-center sm:text-left">
-          &copy; 2024 Olukayode Soliu. Designed &amp; Built with obsession.
+      <div style={{ maxWidth: "1280px", margin: "0 auto", padding: "20px 48px 32px", display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "space-between", flexWrap: "wrap", gap: "12px" }}>
+        <p style={{ fontSize: "14px", color: "rgba(255,255,255,0.4)" }}>
+          &copy; 2026 Olukayode Soliu. Designed &amp; Built with obsession.
         </p>
 
         <button
           onClick={handleScrollTop}
-          className="group inline-flex items-center gap-1.5 text-sm font-medium text-white/60 transition-colors duration-200 hover:text-white self-center sm:self-auto"
+          style={{ display: "inline-flex", alignItems: "center", gap: "6px", fontSize: "14px", fontWeight: 500, color: "rgba(255,255,255,0.6)", background: "none", border: "none", cursor: "pointer" }}
           aria-label="Back to top"
         >
-          Back to top
-          <span
-            className="inline-block transition-transform duration-300 group-hover:-translate-y-0.5"
-            aria-hidden="true"
-          >
-            ↑
-          </span>
+          Back to top ↑
         </button>
       </div>
     </motion.footer>

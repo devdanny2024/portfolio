@@ -24,7 +24,7 @@ export default function Home() {
       <Preloader isVisible={!preloaderDone} onComplete={() => setPreloaderDone(true)} />
 
       {preloaderDone && (
-        <main className="relative bg-[#0a0a0a] overflow-x-hidden">
+        <main style={{ position: "relative", background: "#0a0a0a", minHeight: "100vh" }}>
           <Navbar />
           <Hero />
           <About />

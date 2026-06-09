@@ -154,7 +154,7 @@ export default function Stats() {
         }}
       />
 
-      <div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-12 py-16 md:py-20">
+      <div style={{ position: "relative", zIndex: 10, maxWidth: "1280px", margin: "0 auto", padding: "80px 48px" }}>
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-0">
           {STATS.map((stat, i) => (
             <div key={stat.label} className="relative flex">

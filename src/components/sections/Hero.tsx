@@ -98,7 +98,8 @@ export default function Hero() {
   return (
     <section
       ref={containerRef}
-      className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden"
+      className="relative overflow-hidden"
+      style={{ minHeight: "100vh", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center" }}
     >
       {/* Grid background */}
       <div className="absolute inset-0 grid-bg opacity-40" />
@@ -139,7 +140,7 @@ export default function Hero() {
       </motion.div>
 
       {/* Main content */}
-      <div className="relative z-10 text-center px-6">
+      <div style={{ position: "relative", zIndex: 10, textAlign: "center", padding: "0 48px", width: "100%", maxWidth: "1280px", margin: "0 auto" }}>
         {/* Alias label */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -199,13 +200,31 @@ export default function Hero() {
         >
           <MagneticButton
             href="#work"
-            className="px-8 py-4 rounded-full bg-gradient-to-r from-accent-violet to-accent-cyan text-white font-semibold text-sm tracking-wide hover:opacity-90 transition-opacity glow-violet"
+            style={{
+              padding: "16px 32px",
+              borderRadius: "9999px",
+              background: "linear-gradient(to right, #7c3aed, #06b6d4)",
+              color: "#ffffff",
+              fontWeight: 600,
+              fontSize: "14px",
+              letterSpacing: "0.05em",
+              boxShadow: "0 0 24px rgba(124,58,237,0.4)",
+            }}
           >
             View My Work
           </MagneticButton>
           <MagneticButton
             href="mailto:soliupeter@gmail.com"
-            className="px-8 py-4 rounded-full border border-white/10 text-white/70 hover:text-white hover:border-white/30 font-medium text-sm tracking-wide transition-all duration-300"
+            style={{
+              padding: "16px 32px",
+              borderRadius: "9999px",
+              border: "1px solid rgba(255,255,255,0.1)",
+              color: "rgba(255,255,255,0.7)",
+              fontWeight: 500,
+              fontSize: "14px",
+              letterSpacing: "0.05em",
+              background: "transparent",
+            }}
           >
             Get In Touch
           </MagneticButton>

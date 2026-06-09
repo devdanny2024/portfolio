@@ -33,9 +33,10 @@ export const projects: Project[] = [
     color: "#7c3aed",
     accentGradient: "linear-gradient(135deg, #7c3aed 0%, #4f46e5 50%, #1e1b4b 100%)",
     year: "2024",
-    status: "In Development",
+    status: "Live",
     featured: true,
     github: "https://github.com/devdanny2024/wanzami",
+    live: "https://wanzami.tv",
     metrics: ["Multi-platform", "AWS ECS Fargate", "Live + VOD + PPV"],
   },
   {

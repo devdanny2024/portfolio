@@ -7,6 +7,7 @@ import { cn } from "@/lib/utils";
 interface MagneticButtonProps {
   children: React.ReactNode;
   className?: string;
+  style?: React.CSSProperties;
   onClick?: () => void;
   href?: string;
   strength?: number;
@@ -15,6 +16,7 @@ interface MagneticButtonProps {
 export default function MagneticButton({
   children,
   className,
+  style,
   onClick,
   href,
   strength = 0.4,
@@ -43,6 +45,7 @@ export default function MagneticButton({
         "relative inline-flex items-center justify-center cursor-none select-none",
         className
       )}
+      style={style}
       onClick={onClick}
     >
       {children}

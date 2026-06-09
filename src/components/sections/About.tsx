@@ -134,7 +134,7 @@ export default function About() {
         }}
       />
 
-      <div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-12">
+      <div style={{ position: "relative", zIndex: 10, maxWidth: "1280px", margin: "0 auto", padding: "0 48px" }}>
         <div className="grid grid-cols-1 gap-20 lg:grid-cols-2 lg:gap-32 items-center">
           {/* ── LEFT COLUMN ── */}
           <div className="flex flex-col gap-10">

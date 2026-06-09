@@ -65,8 +65,18 @@ function MagneticButton({
           ? { borderColor: "#7c3aed", color: "#e5e5e5" }
           : { scale: 1.04 }
       }
-      className="inline-flex items-center gap-2 px-7 py-4 rounded-full font-mono text-sm tracking-wide cursor-pointer no-underline"
-      style={variant === "primary" ? primaryStyles : ghostStyles}
+      className="inline-flex items-center cursor-pointer no-underline"
+      style={{
+        ...(variant === "primary" ? primaryStyles : ghostStyles),
+        padding: "14px 28px",
+        borderRadius: "9999px",
+        fontFamily: "monospace",
+        fontSize: "14px",
+        letterSpacing: "0.05em",
+        gap: "8px",
+        display: "inline-flex",
+        alignItems: "center",
+      }}
     >
       {children}
     </motion.a>
@@ -131,8 +141,8 @@ export default function Contact() {
     <section
       id="contact"
       ref={sectionRef}
-      className="relative min-h-screen flex flex-col items-center justify-center px-6 md:px-12 overflow-hidden"
-      style={{ background: "#0a0a0a" }}
+      className="relative overflow-hidden"
+      style={{ minHeight: "100vh", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", padding: "80px 48px", background: "#0a0a0a" }}
     >
       {/* Glowing gradient orb behind text */}
       <div
@@ -168,7 +178,7 @@ export default function Contact() {
       {/* Grid background */}
       <div className="grid-bg absolute inset-0 opacity-20 pointer-events-none" />
 
-      <div className="relative z-10 text-center max-w-7xl mx-auto w-full">
+      <div style={{ position: "relative", zIndex: 10, textAlign: "center", maxWidth: "1280px", margin: "0 auto", width: "100%" }}>
         {/* Section label */}
         <p
           className="font-mono text-xs tracking-[0.3em] uppercase mb-8"

@@ -161,8 +161,8 @@ export default function Skills() {
     <section
       id="skills"
       ref={sectionRef}
-      className="relative py-36 px-6 md:px-16 lg:px-24 overflow-hidden"
-      style={{ background: "#0a0a0a" }}
+      className="relative overflow-hidden"
+      style={{ padding: "120px 0", background: "#0a0a0a" }}
     >
       {/* Subtle grid background */}
       <div className="grid-bg absolute inset-0 opacity-30 pointer-events-none" />
@@ -177,7 +177,7 @@ export default function Skills() {
         }}
       />
 
-      <div className="relative z-10 max-w-6xl mx-auto">
+      <div style={{ position: "relative", zIndex: 10, maxWidth: "1280px", margin: "0 auto", padding: "0 48px" }}>
         {/* Section heading */}
         <div className="mb-16">
           <p
